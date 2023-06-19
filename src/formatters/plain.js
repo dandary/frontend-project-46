@@ -7,7 +7,6 @@ const getValue = (value) => {
     }
     return `${value}`;
   };
-  
   const getPlainFormat = (tree) => {
     const iter = (tree2, path = '') => {
       const filterTree = tree2.filter((item) => item.status !== 'unchanged');
@@ -30,4 +29,3 @@ const getValue = (value) => {
   };
   
   export default getPlainFormat;
-  
