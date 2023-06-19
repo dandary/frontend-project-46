@@ -4,6 +4,7 @@ import { cwd } from 'process';
 import getDiffTree from './getDiff.js';
 import getParse from './parser.js';
 import getFormat from './formatters/index.js';
+
 function getExtension(pathOfFile) {
   const components = pathOfFile.split('.');
   const dataFormat = components.at(-1);
