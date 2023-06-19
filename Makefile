@@ -19,7 +19,7 @@ fix: # linter fix
 	npx eslint --fix .
 
 test: # start test
-	npm test
+	NODE_OPTIONS=--experimental-vm-modules npx jest
 
 test-coverage:
 	npm test -- --coverage --coverageProvider=v8
