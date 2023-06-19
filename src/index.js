@@ -24,3 +24,4 @@ export default (filepath1, filepath2, format = 'stylish') => {
   const astTree = getDiffTree(firstObject, secondObject);
   return getFormat(astTree, format);
 };
+
