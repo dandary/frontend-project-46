@@ -28,4 +28,3 @@ const getValue = (value) => {
     return iter(tree);
   };
   export default getPlainFormat;
-  
