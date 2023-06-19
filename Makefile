@@ -1,13 +1,27 @@
-install: 
+#Makefile
+
+setup:
+	install link
+
+install: # install deps
 	npm ci
-publish:
+
+link:
+	npm link
+
+publish: # publish the project locally
 	npm publish --dry-run
-gendiff:
-	node bin/gendiff.js
-make lint: 
+
+lint: # linter check
 	npx eslint .
-test:
-	NODE_OPTIONS=--experimental-vm-modules npx jest
-test-coverage:   	
+
+fix: # linter fix
+	npx eslint --fix .
+
+test: # start test
+	npm test
+
+test-coverage:
 	npm test -- --coverage --coverageProvider=v8
-	
+
+.PHONY: test
