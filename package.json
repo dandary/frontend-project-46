@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/dandary/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/dandary/frontend-project-46/actions)",
 "main": "./src/index.js",
-  "scripts": {
-    "diff": "src/getDiff.js"
-  },
+"bin": {
+  "gendiff": "bin/gendiff.js"
+},
   "repository": {
     "type": "module",
     "url": "git+https://github.com/dandary/frontend-project-46.git"
