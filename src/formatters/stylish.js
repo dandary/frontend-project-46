@@ -1,4 +1,3 @@
-
 const getCurrentIndent = (depth, intend = 4) => ' '.repeat(intend * depth - 2);
 const getClosingIndent = (depth, intend = 4) => ' '.repeat(intend * depth - intend);
 
